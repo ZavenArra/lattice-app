@@ -43,6 +43,10 @@
     <chmod dir="application/views/generated" perm="777"/>
     <mkdir dir="upload"/> 
     <chmod dir="upload" perm="777"/>
+    <exec executable="chmod">
+      <arg value="-R"/>
+      <arg value="g-w"/>
+    </exec>
   </target>
 
   <target name="init">
