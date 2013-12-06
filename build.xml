@@ -19,7 +19,7 @@
     </exec>
     <exec executable="git" dir="modules/lattice" failonerror="true">
       <arg value="checkout"/>
-      <arg value="stable"/>
+      <arg value="master"/>
     </exec>  
     <exec executable="git" dir="modules/lattice" failonerror="true">
       <arg value="submodule"/>
