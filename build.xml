@@ -2,6 +2,12 @@
 
 <project name="latticesite" default="pull">
 
+  <target name="install">
+    <ant target="checkout"/>
+    <ant target="setup"/>
+    <ant target="init"/>
+  </target>
+
   <target name="checkout">
     <exec executable="git" failonerror="true">
       <arg value="submodule"/>
@@ -24,7 +30,6 @@
       <arg value="update"/>
       <arg value="--recursive"/>
     </exec>
-    <ant target="setup"/>
   </target>
 
   <target name="setup">
